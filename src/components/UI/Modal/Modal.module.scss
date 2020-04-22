@@ -1,0 +1,15 @@
+.Modal {
+  display: flex;
+  justify-content: center;
+  top: 16vw !important;
+  bottom: inherit !important;
+}
+
+.Paper {
+  background: #fff;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0, .2), 0 5px 8px 0 rgba(0,0,0, .14), 0 1px 14px 0 rgba(0,0,0, .12);
+  padding: 16px;
+  max-width: 600px;
+  width: 100%;
+  outline: none;
+}

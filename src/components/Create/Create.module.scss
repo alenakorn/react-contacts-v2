@@ -1,0 +1,28 @@
+@import "../../variable";
+
+.Create {
+  margin-top: 64px;
+  h1 {
+    text-align: center;
+    color: $textDark;
+    margin-bottom: 40px;
+  }
+}
+
+.Form {
+  max-width: 600px;
+  margin: auto;
+  width: 100%;
+  background: #fff;
+  padding: 40px 24px 24px;
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+  border-radius: 10px;
+  & * {
+    box-sizing: border-box;
+  }
+  button {
+    display: block;
+    margin: auto;
+  }
+}
+

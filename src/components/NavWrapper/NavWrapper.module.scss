@@ -1,0 +1,63 @@
+@import "../../variable";
+
+$drawerWidth: 240px;
+
+.MenuList {
+  a {
+    text-decoration: none;
+    color: $textDark;
+  }
+}
+
+.Root {
+  display: flex;
+}
+
+.Drawer {
+  @media (min-width: 600px) {
+    width: $drawerWidth;
+    flex-shrink: 0;
+  }
+}
+
+.DrawerContent {
+  flex-grow: 1;
+  padding: 30px;
+}
+
+.AppBar {
+  @media (min-width: 600px) {
+    width: calc(100% - #{$drawerWidth}) !important;
+    margin-left: $drawerWidth !important;
+  }
+}
+
+.DrawerPaper {
+  width: $drawerWidth;
+}
+
+.MenuButton {
+  margin-right: 20px;
+  @media (min-width: 600px) {
+    display: none !important;
+  }
+}
+
+.CreateButton {
+  text-decoration: none;
+  color: $textDark;
+  display: block;
+  min-height: 56px;
+  @media (min-width: 600px) {
+    min-height: 64px;
+  }
+  & > div {
+    min-height: 56px;
+    @media (min-width: 600px) {
+      min-height: 64px;
+    }
+    &:hover {
+      background-color: rgba(63, 81, 181, 0.17);
+    }
+  }
+}

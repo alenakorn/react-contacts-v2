@@ -1,0 +1,21 @@
+@import "../../variable";
+
+.ListContainer {
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+}
+.ListTitle {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all .2s ease-in;
+  div {
+    flex-basis: 25%;
+    font-family: $font;
+    color: $textDark;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}

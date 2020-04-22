@@ -1,0 +1,22 @@
+.Input {
+  width: 100%;
+  margin-bottom: 32px;
+  box-sizing: border-box;
+  max-width: 600px;
+  div {
+    display: block;
+  }
+
+  input {
+    box-sizing: border-box;
+    height: auto;
+  }
+
+}
+
+.InputItem {
+  border: 1px solid red;
+  &:focus {
+
+  }
+}

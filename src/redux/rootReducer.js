@@ -1,6 +1,10 @@
 import {combineReducers} from 'redux';
-import createReducer from './reducer/createReducer'
+import create from './reducer/create'
+import commentListReducer from './reducer/list'
+import contact from './reducer/contact'
 
 export default combineReducers({
-    createReducer
+    create: create,
+    list: commentListReducer,
+    contact: contact
 })

@@ -1,3 +1,5 @@
+@import '../../../variable';
+
 .Input {
   width: 100%;
   margin-bottom: 32px;
@@ -10,13 +12,11 @@
   input {
     box-sizing: border-box;
     height: auto;
+    color: $textDark;
+    &:disabled {
+      color: $textDark;
+      opacity: 0.8;
+    }
   }
 
-}
-
-.InputItem {
-  border: 1px solid red;
-  &:focus {
-
-  }
 }

@@ -1,0 +1,43 @@
+@import "../../../variable";
+
+.CreateButton {
+  text-decoration: none;
+  color: $textDark;
+  //display: block;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 600px) {
+    min-height: 64px;
+  }
+  & > div {
+    min-height: 56px;
+    @media (min-width: 600px) {
+      min-height: 64px;
+    }
+    &:hover {
+      background-color: rgba(63, 81, 181, 0.17);
+    }
+  }
+
+  svg {
+    color: $main;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.activeCreateLink {
+  background: linear-gradient(to right, #FFFFFF, #FFFFFF 70%);
+  color: #fff;
+  span {
+    font-weight: bold;
+    background: linear-gradient(to right, $main 0%, #2fb7d0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+}

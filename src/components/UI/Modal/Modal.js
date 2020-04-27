@@ -13,7 +13,7 @@ const ModalWrap = props => {
                 aria-describedby="transition-modal-description"
                 className={style.Modal}
                 open={props.open}
-                // onClose={props.handleClose}
+                onClose={props.handleClose}
                 closeAfterTransition
                 BackdropComponent={Backdrop}
                 BackdropProps={{

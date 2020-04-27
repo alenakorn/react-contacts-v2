@@ -3,11 +3,27 @@
 $drawerWidth: 240px;
 
 .MenuList {
+  padding: 0 !important;
   a {
     text-decoration: none;
     color: $textDark;
+    display: block;
+  }
+  .activeLink {
+    background: linear-gradient(to right, #FFFFFF, #FFFFFF 70%);
+    color: #fff;
+    span {
+      font-weight: bold;
+      background: linear-gradient(to right, $main 0%, #2fb7d0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    svg {
+      color: $main;
+    }
   }
 }
+
 
 .Root {
   display: flex;
@@ -40,24 +56,5 @@ $drawerWidth: 240px;
   margin-right: 20px;
   @media (min-width: 600px) {
     display: none !important;
-  }
-}
-
-.CreateButton {
-  text-decoration: none;
-  color: $textDark;
-  display: block;
-  min-height: 56px;
-  @media (min-width: 600px) {
-    min-height: 64px;
-  }
-  & > div {
-    min-height: 56px;
-    @media (min-width: 600px) {
-      min-height: 64px;
-    }
-    &:hover {
-      background-color: rgba(63, 81, 181, 0.17);
-    }
   }
 }

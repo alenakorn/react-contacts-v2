@@ -3,7 +3,6 @@ import {NavLink} from 'react-router-dom'
 
 import BookmarkIcon from '@material-ui/icons/Bookmark'
 import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar'
-import PersonAddIcon from '@material-ui/icons/PersonAdd'
 import MenuIcon from '@material-ui/icons/Menu'
 import {makeStyles, useTheme} from '@material-ui/core/styles'
 import {
@@ -13,6 +12,7 @@ import {
 } from '@material-ui/core'
 
 import style from './NavWrapper.module.scss'
+import CreateButton from '../UI/CreateButton/CreateButton'
 
 const useStyles = makeStyles((theme) => ({
     // necessary for content to be below app bar
@@ -32,22 +32,17 @@ function NavWrapper(props) {
     const drawer = (
         <div>
             <div className={[classes.toolbar, style.Toolbar].join(' ')}>
-                <NavLink to='/create' className={style.CreateButton}>
-                    <ListItem button>
-                        <ListItemIcon><PersonAddIcon/></ListItemIcon>
-                        <ListItemText>Create contact</ListItemText>
-                    </ListItem>
-                </NavLink>
+                <CreateButton/>
             </div>
             <Divider/>
             <List className={style.MenuList}>
-                <NavLink to='/'>
+                <NavLink to='/' exact activeClassName={style.activeLink}>
                     <ListItem button>
                         <ListItemIcon><PermContactCalendarIcon/></ListItemIcon>
                         <ListItemText>Contacts</ListItemText>
                     </ListItem>
                 </NavLink>
-                <NavLink to='/favorites'>
+                <NavLink to='/favorites' activeClassName={style.activeLink}>
                     <ListItem button>
                         <ListItemIcon><BookmarkIcon/></ListItemIcon>
                         <ListItemText>Favorites</ListItemText>

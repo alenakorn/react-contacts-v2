@@ -1,32 +1,19 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Loader from '../UI/Loader/Loader'
-import Input from '../UI/Input/Input'
 
 import style from './ViewContact.module.scss'
 
-import Button from '@material-ui/core/Button';
 import DeleteIcon from '@material-ui/icons/Delete'
 import EditIcon from '@material-ui/icons/Edit'
 
-import {deleteContact} from '../../redux/action/contact'
+import {changeEditHandler, deleteContact, openConfirmDialog, closeConfirmDialog} from '../../redux/action/contact'
+import Form from '../Form/Form'
+import ConfirmDialog from '../UI/Dialog/Dialog'
 
 class ViewContact extends Component {
 
-    state = {
-        changeEdit: false,
-        changeDelete: false,
-    }
-
-    changeEditHandler = () => {
-        this.setState({
-            changeEdit: true
-        })
-    }
-
     render() {
-        const contactItem = this.props.contactItem
-        console.log(this.props.idContact)
         return (
             <>
                 {
@@ -35,40 +22,22 @@ class ViewContact extends Component {
                         : (
                             <div>
                                 <div className={style.controlsWrap}>
-                                    <div className={style.title}><h2>Title contact</h2></div>
+                                    <div className={style.title}><h2>Contact information</h2></div>
                                     <div className={style.controls}>
-                                        <div onClick={this.changeEditHandler}><EditIcon/></div>
-                                        <div onClick={() => this.props.deleteContact(this.props.idContact)}><DeleteIcon/></div>
+                                        <div onClick={this.props.changeEditHandler}><EditIcon/></div>
+                                        <div onClick={this.props.openConfirmDialog}><DeleteIcon/></div>
                                     </div>
                                 </div>
-                                {
-                                    Object.entries(contactItem).map((item, key) => {
-                                        return (
-                                              <Input
-                                                  key={key}
-                                                  value={!!item[1] ? item[1] : ' '}
-                                                  label={item[0]}
-                                                  disabled={!this.state.changeEdit}
-                                                  placeholder=''
-                                              />
-                                        )
-                                    })
-                                }
 
-                                {
-                                    this.state.changeEdit
-                                        ?  (
-                                            <>
-                                                <Button variant="contained" color="primary">
-                                                Save
-                                            </Button>
-                                                <Button variant="outlined" color="primary">
-                                                    Cancel
-                                                </Button>
-                                            </>
-                                        )
-                                        : null
-                                }
+                                <Form />
+
+                                <ConfirmDialog
+                                    title="Are you sure you want to delete this item?"
+                                    handleClose={this.props.closeConfirmDialog}
+                                    handleDelete={() => this.props.deleteContact(this.props.idContact)}
+                                    open={this.props.openDialog}
+                                />
+
                             </div>
                         )
                 }
@@ -80,14 +49,17 @@ class ViewContact extends Component {
 function mapStateToProps(state) {
     return {
         loading: state.contact.loading,
-        contactItem: state.contact.contactItem,
-        idContact: state.contact.id
+        idContact: state.contact.id,
+        openDialog: state.contact.openDialog,
     }
 }
 
 function mapDispatchToProps(dispatch) {
     return {
-        deleteContact: id => dispatch(deleteContact(id))
+        deleteContact: id => dispatch(deleteContact(id)),
+        changeEditHandler: () => dispatch(changeEditHandler()),
+        openConfirmDialog: () => dispatch(openConfirmDialog()),
+        closeConfirmDialog: () => dispatch(closeConfirmDialog()),
     }
 }
 

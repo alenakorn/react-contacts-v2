@@ -8,7 +8,8 @@ import ViewContact from '../ViewContact/ViewContact'
 import ModalWrap from '../UI/Modal/Modal'
 import {connect} from 'react-redux'
 import {fetchContacts} from '../../redux/action/list'
-import {openContact} from '../../redux/action/contact'
+import {closeModalHandler, openContact, openModalHandler} from '../../redux/action/contact'
+import EmptyList from '../EmptyList/EmptyList'
 
 class ContactList extends Component {
 
@@ -31,40 +32,34 @@ class ContactList extends Component {
         })
     }
 
-    handleOpen = () => {
-
-    }
-
-    handleClose = () => {
-
-    }
-
     render() {
-
         return (
             <>
                 {
                     this.props.loading
                         ? <Loader/>
-                        : (
-                            <div className={style.ListContainer}>
-                                <div className={style.ListTitle}>
-                                    <div>Name</div>
-                                    <div>Phone</div>
-                                    <div>Email</div>
-                                    <div>Comment</div>
-                                </div>
-                                {this.renderContactItem()}
+                        :
+                        this.props.isEmptyList
+                            ? <EmptyList />
+                            : (
+                                <div className={style.ListContainer}>
+                                    <div className={style.ListTitle}>
+                                        <div>Name</div>
+                                        <div>Phone</div>
+                                        <div>Email</div>
+                                        <div>Comment</div>
+                                    </div>
+                                    {this.renderContactItem()}
 
-                                <ModalWrap
-                                    open={this.props.openModal}
-                                    // handleOpen={this.handleOpen}
-                                    // handleClose={this.handleClose}
-                                >
-                                    <ViewContact/>
-                                </ModalWrap>
-                            </div>
-                        )
+                                    <ModalWrap
+                                        open={this.props.openModal}
+                                        handleOpen={this.props.openModalHandler}
+                                        handleClose={this.props.closeModalHandler}
+                                    >
+                                        <ViewContact/>
+                                    </ModalWrap>
+                                </div>
+                            )
                 }
             </>
         )
@@ -73,16 +68,19 @@ class ContactList extends Component {
 
 function mapStateToProps(state) {
     return {
+        isEmptyList: state.list.isEmptyList,
         contacts: state.list.contacts,
         loading: state.list.loading,
-        openModal: state.contact.openModal
+        openModal: state.contact.openModal,
     }
 }
 
 function mapDispatchToProps(dispatch) {
     return {
         fetchContacts: () => dispatch(fetchContacts()),
-        openContact: id => dispatch(openContact(id))
+        openContact: id => dispatch(openContact(id)),
+        openModalHandler: () => dispatch(openModalHandler()),
+        closeModalHandler: () => dispatch(closeModalHandler()),
     }
 }
 

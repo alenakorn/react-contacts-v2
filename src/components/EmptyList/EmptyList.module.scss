@@ -1,0 +1,16 @@
+@import "../../variable";
+
+.EmptyList {
+
+  h2 {
+    color: $textDark;
+    text-align: center;
+  }
+}
+
+.CreateButtonWrap {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  max-width: 240px;
+  margin: 40px auto;
+}

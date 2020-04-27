@@ -2,43 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ec0976f-28b7-4b11-a002-02f77a73aeaf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/axios/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContactItem/ContactItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContactItem/ContactItem.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContactList/ContactList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContactList/ContactList.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Create/Create.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Create/Create.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Favorites/Favorites.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NavWrapper/NavWrapper.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SuccessMessage/SuccessMessage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Loader/Loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Loader/Loader.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Modal/Modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Modal/Modal.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ViewContact/ViewContact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ViewContact/ViewContact.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/action/contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/action/create.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/action/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducer/contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducer/create.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducer/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/variable.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EmptyList/EmptyList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EmptyList/EmptyList.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Form/Form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Form/Form.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/CreateButton/CreateButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/CreateButton/CreateButton.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Dialog/Dialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactItem/ContactItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactItem/ContactItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactList/ContactList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactList/ContactList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Create/Create.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Create/Create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Create/Create.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Create/Create.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavWrapper/NavWrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavWrapper/NavWrapper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Contacts/Contacts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/action/createAction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavWrapper/NavWrapper.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavWrapper/NavWrapper.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Input/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Input/Input.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Modal/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Modal/Modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ViewContact/ViewContact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ViewContact/ViewContact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/action/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/action/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/action/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/action/list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/action/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/action/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducer/createReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducer/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducer/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/variable.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +65,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
@@ -97,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586952764592</updated>
-      <workItem from="1586952766110" duration="68899000" />
+      <workItem from="1586952766110" duration="86383000" />
     </task>
     <servers />
   </component>
@@ -105,10 +94,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="303" y="52" key="CommitChangelistDialog2" timestamp="1587556440172">
+    <state x="303" y="52" key="CommitChangelistDialog2" timestamp="1587976891615">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="303" y="52" key="CommitChangelistDialog2/0.0.1440.900/-221.-1200.1920.1200@0.0.1440.900" timestamp="1587556440172" />
+    <state x="303" y="52" key="CommitChangelistDialog2/0.0.1440.900/-221.-1200.1920.1200@0.0.1440.900" timestamp="1587976891615" />
     <state x="293" y="235" key="EditFileWatcherDialog" timestamp="1586960719672">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -117,13 +106,17 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="538" y="380" key="NewPhpFileDialog/0.0.1440.900/-221.-1200.1920.1200@0.0.1440.900" timestamp="1587560157103" />
-    <state x="378" y="207" width="683" height="486" key="find.popup" timestamp="1587550218398">
+    <state x="241" y="87" key="SettingsEditor" timestamp="1587665202652">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="378" y="207" width="683" height="486" key="find.popup/0.0.1440.900/-221.-1200.1920.1200@0.0.1440.900" timestamp="1587550218398" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1587565344046">
+    <state x="241" y="87" key="SettingsEditor/0.0.1440.900/-221.-1200.1920.1200@0.0.1440.900" timestamp="1587665202652" />
+    <state x="378" y="207" width="683" height="486" key="find.popup" timestamp="1587656880584">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-221.-1200.1920.1200@0.0.1440.900" timestamp="1587565344046" />
+    <state x="378" y="207" width="683" height="486" key="find.popup/0.0.1440.900/-221.-1200.1920.1200@0.0.1440.900" timestamp="1587656880584" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1587650406771">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-221.-1200.1920.1200@0.0.1440.900" timestamp="1587650406771" />
   </component>
 </project>

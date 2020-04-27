@@ -24,6 +24,7 @@ const Input = props => {
                 disabled={props.disabled || false}
                 multiline={props.multiline || true}
                 onChange={props.onChange}
+                onBlur={props.onBlur}
                 InputProps={{
                     placeholder: props.placeholder,
                     name: props.mask,

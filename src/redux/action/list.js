@@ -1,5 +1,5 @@
 import axios from '../../axios/axios'
-import {FETCH_CONTACT_SUCCESS} from './types'
+import {FETCH_CONTACT_SUCCESS, EMPTY_CONTACT_LIST} from './types'
 
 export function fetchContacts() {
     return async dispatch => {
@@ -11,7 +11,7 @@ export function fetchContacts() {
 
             dispatch(fetchContactsSuccess(data))
         } catch (e) {
-
+            dispatch({type: EMPTY_CONTACT_LIST})
         }
     }
 }

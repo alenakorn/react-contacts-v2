@@ -8,12 +8,13 @@
   justify-content: space-between;
   cursor: pointer;
   transition: all .2s ease-in;
-  &:hover  {
+
+  &:hover {
     background: rgba(0, 0, 0, 0.04);
   }
 
-  &:active{
-    box-shadow: inset 0 0 5px 0.5px rgba(0,0,0,0.15);
+  &:active {
+    box-shadow: inset 0 0 5px 0.5px rgba(0, 0, 0, 0.15);
   }
 
   div {
@@ -21,25 +22,11 @@
     font-family: $font;
     color: $textDark;
     font-size: 16px;
+    padding-right: 8px;
+
   }
 
   &:nth-child(n+2) {
     border-top: 1px solid rgba(60, 64, 67, .15);
   }
- }
-
-.Name {
-
-}
-
-.Phone {
-
-}
-
-.Email {
-
-}
-
-.Comment {
-
 }
